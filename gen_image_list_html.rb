@@ -1,5 +1,3 @@
-﻿
-# 2020-11-05
 # Generating Image List HTML
 
 require 'erb'
@@ -14,6 +12,8 @@ Dir.foreach(target_dir) do |item|
   ext = File.extname(item)
   image_list << item if ext.downcase == '.jpg'
 end
+
+exit 1 if image_list.length == 0
 
 image_html_list = []
 item_template_file = "#{__dir__}/item.html"
@@ -32,4 +32,4 @@ file.puts erb.result
 file.close
 
 puts "Generated: #{target_dir}/images.html"
-sleep 5
+sleep 3
