@@ -1,5 +1,5 @@
 # gen_image_list_html
-Generating image list html
+Image list HTML generation tool that can be used by drag and drop (for Windows)
 
 ## System requirements
 * Windows 10 (20H2)
